@@ -2630,4 +2630,4 @@
 (run-mq-stress-tests)
 
 (mq-test-summary)
-(exit)
+(exit (if (> ?*tests-failed* 0) then 1 else 0))
